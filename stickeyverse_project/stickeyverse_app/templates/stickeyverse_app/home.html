@@ -1,0 +1,46 @@
+{% extends 'stickeyverse_app/base.html' %}
+<div>{% block title %}Stickeyverse - Home{% endblock %}</div>
+{% load static %}
+<div>{% block css %} 
+  
+  body {
+    /* Background image with opacity 0.3 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('{% static "stickeyverse_app\images\wallpaper.jpeg" %}');
+    background-size: cover;
+    background-position: center;
+    /* Set the background image as fixed to ensure it covers the whole viewport */
+    background-attachment: fixed;
+  }
+
+  {% endblock %}</div>
+<div>{% block content %} </div>
+
+<main class="p-4 h-screen">
+  <div>
+    
+    <header class="p-10 text-center rounded">
+      <h1 class="text-6xl font-bold mb-4 text-white">Stickeyverse</h1>
+      <p class="text-lg font-semibold bg-black text-white p-2 inline-block border border-white border-4">Spreading Smiles, Inspiring Lives</p>
+    </header>
+
+    <section class="p-4 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white">
+        <h2 class="text-2xl font-bold mb-4">About Our Aim</h2>
+        <p class="mb-4">Our aim at Stickeyverse is to provide the highest quality of stickers that can bring a smile to your face and inspire your life. We believe in the power of creativity and self-expression, and our stickers are designed to uplift your mood and add a touch of joy to your everyday life.</p>
+        <!-- Additional information about your aim goes here -->
+    </section>
+
+    <section class="p-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+        <h2 class="text-2xl font-bold mb-4">How to Purchase Stickers</h2>
+        <p class="mb-4">Purchasing stickers from Stickeyverse is easy! Just follow these simple steps:</p>
+        <ol class="list-decimal pl-6">
+            <li>Contact us via WhatsApp at +91 70214 47090.</li>
+            <li>Share the names or codes of the stickers you want to purchase.</li>
+            <li>Provide your shipping address and any other necessary details.</li>
+            <li>Complete the payment via WhatsApp.</li>
+            <li>Receive your high-quality stickers at your doorstep and spread smiles!</li>
+        </ol>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

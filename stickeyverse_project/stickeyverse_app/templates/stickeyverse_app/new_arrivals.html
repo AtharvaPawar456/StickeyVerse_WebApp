@@ -1,0 +1,24 @@
+{% extends 'stickeyverse_app/base.html' %} {% block title %}Stickeyverse - New Arrivals{% endblock %}
+<div>{% block content %} {% load static %}</div>
+
+
+    <main class="p-4">
+        <h1 class="text-3xl font-bold mb-4">New Arrivals</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {% for sticker in stickers %}
+                <div class="border p-4 rounded-lg">
+                    <img src="{{ sticker.image.url }}" alt="{{ sticker.name }}" class="w-full h-48 object-contain">
+                    <h2 class="my-4 text-lg font-bold">{{ sticker.stickername }}</h2>
+                    <p class="h-24">{{ sticker.description }}</p>
+                    <div class="flex flex-row gap-4">
+                        <p class="rounded p-4 border border-rose-500 border-2 w-1/2">Price: Rs. {{ sticker.price }}</p>
+                        <p class="rounded p-4 border border-indigo-500/75 border-2 w-1/2 text-center">QTY: {{ sticker.qty }}</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">Order Now</button>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    {% endblock %}
+

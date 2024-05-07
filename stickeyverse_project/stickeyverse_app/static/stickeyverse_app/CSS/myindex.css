@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+/* Navbar */
+
+/* Styles for the navigation menu items */
+.nav-headtext {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    border-radius: 0.25rem;
+    color: #04012a; /* Text color (white) */
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+  
+    /* Hover styles for small screens (mobile) */
+    background-color: #f59e0b; /* Background color when hovering */
+
+  }
+.nav-headtext:hover {
+    color: #0f0101; /* Text color (white) */
+    background-color: #F3F4F6; /* Background color when hovering */
+  }
+  
+  /* Media query for larger screens (min-width: 768px) */
+  @media (min-width: 768px) {/* Styles for larger screens (desktop) */
+
+    /* .nav-text {
+      Reset the padding and border styles for larger screens
+      padding: 0;
+      border-width: 0;
+  
+      Hover styles for larger screens (desktop)
+      :hover {
+        color: #ffffff; 
+        background-color: #374151; 
+      }
+  
+      Styles for dark mode or dark backgrounds on larger screens
+      md:dark:hover:bg-transparent {
+        background-color: transparent !important; 
+      }
+    } */
+  }
+  
+
+
+
+
+/* Footer  */
+.footer-headtext{
+    margin-bottom: 1.5rem; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    color: #002060; 
+    text-transform: uppercase; 
+}
+
+
+.footer-subtext{
+    font-weight: 500; 
+    color: #ffffff; 
+
+}
+
+
+
+

@@ -1,0 +1,24 @@
+Website Name : stickeyverse
+
+admin:
+
+username = stickadmin
+password = 123@admin
+
+username = atharvapawar
+password = admin123
+
+
+replit:
+email:versestickey@gmail.com 
+username = stickverseMyadmin
+password = 123@786adminN
+
+
+Publice View:
+URL: https://stickeyverse--stickeyverse.repl.co/
+
+Admin(view):  
+URL: https://stickeyverse--stickeyverse.repl.co/admin
+username = stickverseMyadmin
+password = 123@786adminN
